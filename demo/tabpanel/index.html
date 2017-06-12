@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Composant TabPanel original - ReactJS - SGMAP</title>
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.css" />
+	</head>
+
+	<body>
+		<header role="banner">
+			<nav class="navbar navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="../index.html" class="navbar-brand">Accueil des tests ReactJS</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main role="main" class="container">
+			<h1>Composant <span lang="en">React Tabs</span> original</h1>
+
+			<p><a href="https://reactcommunity.org/react-tabs/example/">https://reactcommunity.org/react-tabs/example/</a></p>
+
+			<div id="tabpanel-demo"></div>
+		</main>
+
+		<script type="text/javascript" src="../../node_modules/react/dist/react.js"></script>
+		<script type="text/javascript" src="../../node_modules/react-dom/dist/react-dom.js"></script>
+		<script type="text/javascript" src="../../node_modules/react-tabs/dist/react-tabs.js"></script>
+
+		<script type="text/javascript">
+			var e = React.createElement;
+			var tabPanel = (
+				e(ReactTabs.Tabs, {selectedIndex: 0},
+					e(ReactTabs.TabList, {},
+						e(ReactTabs.Tab, {}, 'Onglet 1'),
+						e(ReactTabs.Tab, {}, 'Onglet 2'),
+						e(ReactTabs.Tab, {}, 'Onglet 3')
+					),
+					e(ReactTabs.TabPanel, {}, 'Contenu de l\'onglet 1 ', e('button', {}, 'bouton')),
+					e(ReactTabs.TabPanel, {}, 'Contenu de l\'onglet 2'),
+					e(ReactTabs.TabPanel, {}, 'Contenu de l\'onglet 3')
+				)
+			);
+
+			ReactDOM.render(tabPanel, document.getElementById('tabpanel-demo'));
+		</script>
+	</body>
+</html>

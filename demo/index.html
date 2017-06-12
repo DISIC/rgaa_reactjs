@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>ReactJS - SGMAP</title>
+		<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+	</head>
+
+	<body>
+		<header role="banner">
+			<nav class="navbar navbar-dark" style="background: #2868C9;">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand">Accueil des tests ReactJS</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main role="main" class="container">
+			<h1 lang="en">ReactJS</h1>
+
+			<p class="alert alert-info">
+				{
+					"react": "^15.0.0",
+					"react-autocomplete": "^1.4.0",
+					"react-modal": "^1.6.2",
+					"react-tabs": "^0.8.2"
+				}
+			</p>
+
+			<table class="table table-bordered">
+				<caption>Tableau des composants d’interface pour la bibliothèque <span lang="en">ReactJS</span></caption>
+
+				<thead>
+					<tr>
+						<th scope="col">composant</th>
+						<th scope="col">évaluation du composant natif</th>
+						<th scope="col">correction</th>
+						<th scope="col">restitution lecteurs d'écran</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<th scope="row" lang="en">Autocomplete</th>
+						<td class="table-danger">non conforme</td>
+						<td class="table-warning" colspan="2">solution alternative</td>
+					</tr>
+
+					<tr>
+						<th scope="row" lang="en">Dialog</th>
+						<td class="table-success">conforme</td>
+						<td class="table-success">aucune</td>
+						<td class="table-info">A TESTER</td>
+					</tr>
+
+					<tr>
+						<th scope="row" lang="en">TabPanel</th>
+						<td class="table-success">conforme</td>
+						<td class="table-success">aucune</td>
+						<td class="table-info">A TESTER</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2 lang="en">Autocomplete</h2>
+
+			<ul>
+				<li>Solution alternative</li>
+				<li><a href="autocomplete/index.html">Composant original</a></li>
+			</ul>
+
+			<h2 lang="en">Dialog</h2>
+
+			<ul>
+				<li>Composant sans erreurs, pas de correction nécessaire</li>
+				<li><a href="modal/index.html">Composant original</a></li>
+			</ul>
+
+			<h2 lang="en">TabPanel</h2>
+
+			<ul>
+				<li>Composant sans erreurs, pas de correction nécessaire</li>
+				<li><a href="tabpanel/index.html">Composant original</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

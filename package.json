@@ -1,0 +1,41 @@
+{
+  "name": "rgaa_reactjs",
+  "version": "2.0.0",
+  "description": "Accessible React Bootstrap components.",
+  "author": "Etat Plateforme <rgaa.sgmap@modernisation.gouv.fr>",
+  "license": "CC-BY 2.0",
+  "main": "dist/rgaa_reactjs.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0",
+    "react-autocomplete": "^1.4.0",
+    "react-modal": "^1.6.0",
+    "react-tabs": "^0.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "bootstrap": "^3.3.7",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^3.1.2",
+    "react": "^15.4.1",
+    "react-autocomplete": "^1.4.0",
+    "react-dom": "^15.4.1",
+    "react-modal": "^1.6.2",
+    "react-tabs": "^0.8.2",
+    "rgaa-test-suite": "^1.1.0",
+    "webpack": "^1.12.15"
+  }
+}
